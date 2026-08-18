@@ -14,7 +14,7 @@ function EntryCard({ entry, onClick }) {
 
       <div className="p-5">
         <p className="mb-2 text-xs font-semibold uppercase tracking-widest text-slate-500">
-          {entry.date}
+          {new Date(entry.date).toLocaleDateString('de-DE')} 
         </p>
 
         <h2 className="text-xl font-semibold text-white">
